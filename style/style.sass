@@ -1,2 +1,45 @@
 body
   padding-top: 30px
+
+
+.board
+  box-sizing: content-box
+  background: #000
+  width: 840px
+  height: 600px
+  margin: 0px auto
+  border: 9px solid #333
+  border-radius: 9px
+
+.cell
+  font-size: 9px
+  width: 11px
+  height: 11px
+  border-top: 1px solid #333
+  border-left: 1px solid #222
+  margin: 0px
+  float: left
+  border-radius: none
+
+.cell:nth-child(70n + 1)
+    clear: both
+
+.alive
+  background-color: yellow
+
+h1
+  font-size: 56px
+  line-height: 1
+  margin-bottom: 20px
+
+h3
+  color: grey
+  margin-bottom: 20px
+
+button
+  display: block !important
+  width: 100%
+  margin-bottom: 12px
+  cursor: pointer
+  &:focus
+    box-shadow: none !important
